@@ -11,7 +11,7 @@
 ## ✨ Core Features
 
 ### 🤖 **Chat Completions**
-- **Standard Chat**: Create chat completions with various models including `glm-5.1`
+- **Standard Chat**: Create chat completions with various models including `glm-5.2`
 - **Streaming Support**: Real-time streaming responses for interactive applications
 - **Tool Calling**: Function calling capabilities for enhanced AI interactions
 - **Multimodal Chat**: Image understanding capabilities with vision models
@@ -104,7 +104,7 @@ client = ZhipuAiClient(api_key="your-api-key")
 
 # Create chat completion
 response = client.chat.completions.create(
-    model="glm-5.1",
+    model="glm-5.2",
     messages=[
         {"role": "user", "content": "Hello, Z.ai!"}
     ]
@@ -278,7 +278,7 @@ client = ZaiClient(api_key="your-api-key")
 
 try:
     response = client.chat.completions.create(
-        model="glm-5.1",
+        model="glm-5.2",
         messages=[
             {"role": "user", "content": "Hello, Z.ai!"}
         ]
