@@ -11,7 +11,7 @@
 ## ✨ 核心功能
 
 ### 🤖 **对话补全**
-- **标准对话**: 支持 `glm-5.1` 等多种模型的对话补全
+- **标准对话**: 支持 `glm-5.2` 等多种模型的对话补全
 - **流式支持**: 实时流式响应，适用于交互式应用
 - **工具调用**: 函数调用能力，增强 AI 交互体验
 - **多模态对话**: 支持图像理解的视觉模型
@@ -106,7 +106,7 @@ client = ZhipuAiClient(api_key="your-api-key")
 
 # Create chat completion
 response = client.chat.completions.create(
-    model="glm-5.1",
+    model="glm-5.2",
     messages=[
         {"role": "user", "content": "Hello, Z.ai!"}
     ]
@@ -285,7 +285,7 @@ client = ZaiClient(api_key="your-api-key")  # 请填写您自己的APIKey
 
 try:
     response = client.chat.completions.create(
-        model="glm-5.1",
+        model="glm-5.2",
         messages=[
             {"role": "user", "content": "你好， Z.ai ！"}
         ]
