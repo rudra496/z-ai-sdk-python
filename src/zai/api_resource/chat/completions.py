@@ -96,7 +96,7 @@ class Completions(BaseAPI):
 			thinking (Optional[object]): Configuration parameters for model reasoning
 			watermark_enabled (Optional[bool]): Whether to enable watermark on generated audio
 			tool_stream (Optional[bool]): Whether to enable tool streaming
-			reasoning_effort (Optional[str]): Reasoning effort level, supports none, minimal, low, medium, high, xhigh, max. Defaults to max when not set. Effective for glm-5.2 and above models.
+			reasoning_effort (Optional[str]): Reasoning effort level, supports none, minimal, low, medium, high, xhigh, max. Effective for glm-5.2 and above models.
 		"""
 		logger.debug(f'temperature:{temperature}, top_p:{top_p}')
 		if temperature is not None and temperature != NOT_GIVEN:
