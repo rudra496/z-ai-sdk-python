@@ -66,7 +66,7 @@ class Completions(BaseAPI):
 		response_format: object | None = None,
 		thinking: object | None = None,
 		watermark_enabled: Optional[bool] | NotGiven = NOT_GIVEN,
-        tool_stream: bool | NotGiven = NOT_GIVEN,
+		tool_stream: bool | NotGiven = NOT_GIVEN,
 		reasoning_effort: Optional[str] | NotGiven = NOT_GIVEN,
 	) -> Completion | StreamResponse[ChatCompletionChunk]:
 		"""
@@ -145,8 +145,8 @@ class Completions(BaseAPI):
 				'response_format': response_format,
 				'thinking': thinking,
 				'watermark_enabled': watermark_enabled,
-                'tool_stream': tool_stream,
-                'reasoning_effort': reasoning_effort,
+				'tool_stream': tool_stream,
+				'reasoning_effort': reasoning_effort,
 			}
 		)
 		return self._post(
